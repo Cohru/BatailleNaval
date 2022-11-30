@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: projet_1
+# Project: untitled22
 # Configurations: Debug
 # =============================================================================
 
@@ -39,76 +39,58 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/hucor/CLionProjects/projet+1/cmake-build-debug/
+cmake_ninja_workdir = C$:/Users/nahue/CLionProjects/untitled22/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target projet_1
+# Object build statements for EXECUTABLE target untitled22
 
 
 #############################################
-# Order-only phony target for projet_1
+# Order-only phony target for untitled22
 
-build cmake_object_order_depends_target_projet_1: phony || CMakeFiles/projet_1.dir
+build cmake_object_order_depends_target_untitled22: phony || CMakeFiles/untitled22.dir
 
-build CMakeFiles/projet_1.dir/main.c.obj: C_COMPILER__projet_1_Debug C$:/Users/hucor/CLionProjects/projet+1/main.c || cmake_object_order_depends_target_projet_1
-  DEP_FILE = CMakeFiles\projet_1.dir\main.c.obj.d
+build CMakeFiles/untitled22.dir/main.c.obj: C_COMPILER__untitled22_Debug C$:/Users/nahue/CLionProjects/untitled22/main.c || cmake_object_order_depends_target_untitled22
+  DEP_FILE = CMakeFiles\untitled22.dir\main.c.obj.d
   FLAGS = -g -std=gnu2x
-  OBJECT_DIR = CMakeFiles\projet_1.dir
-  OBJECT_FILE_DIR = CMakeFiles\projet_1.dir
+  OBJECT_DIR = CMakeFiles\untitled22.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled22.dir
 
-build CMakeFiles/projet_1.dir/grilleprogramme.c.obj: C_COMPILER__projet_1_Debug C$:/Users/hucor/CLionProjects/projet+1/grilleprogramme.c || cmake_object_order_depends_target_projet_1
-  DEP_FILE = CMakeFiles\projet_1.dir\grilleprogramme.c.obj.d
+build CMakeFiles/untitled22.dir/menu.c.obj: C_COMPILER__untitled22_Debug C$:/Users/nahue/CLionProjects/untitled22/menu.c || cmake_object_order_depends_target_untitled22
+  DEP_FILE = CMakeFiles\untitled22.dir\menu.c.obj.d
   FLAGS = -g -std=gnu2x
-  OBJECT_DIR = CMakeFiles\projet_1.dir
-  OBJECT_FILE_DIR = CMakeFiles\projet_1.dir
+  OBJECT_DIR = CMakeFiles\untitled22.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled22.dir
 
-build CMakeFiles/projet_1.dir/bateau_programme.c.obj: C_COMPILER__projet_1_Debug C$:/Users/hucor/CLionProjects/projet+1/bateau$ programme.c || cmake_object_order_depends_target_projet_1
-  DEP_FILE = CMakeFiles\projet_1.dir\bateau_programme.c.obj.d
+build CMakeFiles/untitled22.dir/aide.c.obj: C_COMPILER__untitled22_Debug C$:/Users/nahue/CLionProjects/untitled22/aide.c || cmake_object_order_depends_target_untitled22
+  DEP_FILE = CMakeFiles\untitled22.dir\aide.c.obj.d
   FLAGS = -g -std=gnu2x
-  OBJECT_DIR = CMakeFiles\projet_1.dir
-  OBJECT_FILE_DIR = CMakeFiles\projet_1.dir
-
-build CMakeFiles/projet_1.dir/Jouer.c.obj: C_COMPILER__projet_1_Debug C$:/Users/hucor/CLionProjects/projet+1/Jouer.c || cmake_object_order_depends_target_projet_1
-  DEP_FILE = CMakeFiles\projet_1.dir\Jouer.c.obj.d
-  FLAGS = -g -std=gnu2x
-  OBJECT_DIR = CMakeFiles\projet_1.dir
-  OBJECT_FILE_DIR = CMakeFiles\projet_1.dir
-
-build CMakeFiles/projet_1.dir/deplacerprogramme.c.obj: C_COMPILER__projet_1_Debug C$:/Users/hucor/CLionProjects/projet+1/deplacerprogramme.c || cmake_object_order_depends_target_projet_1
-  DEP_FILE = CMakeFiles\projet_1.dir\deplacerprogramme.c.obj.d
-  FLAGS = -g -std=gnu2x
-  OBJECT_DIR = CMakeFiles\projet_1.dir
-  OBJECT_FILE_DIR = CMakeFiles\projet_1.dir
-
-build CMakeFiles/projet_1.dir/eclairerfonction.c.obj: C_COMPILER__projet_1_Debug C$:/Users/hucor/CLionProjects/projet+1/eclairerfonction.c || cmake_object_order_depends_target_projet_1
-  DEP_FILE = CMakeFiles\projet_1.dir\eclairerfonction.c.obj.d
-  FLAGS = -g -std=gnu2x
-  OBJECT_DIR = CMakeFiles\projet_1.dir
-  OBJECT_FILE_DIR = CMakeFiles\projet_1.dir
+  OBJECT_DIR = CMakeFiles\untitled22.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled22.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target projet_1
+# Link build statements for EXECUTABLE target untitled22
 
 
 #############################################
-# Link the executable projet_1.exe
+# Link the executable untitled22.exe
 
-build projet_1.exe: C_EXECUTABLE_LINKER__projet_1_Debug CMakeFiles/projet_1.dir/main.c.obj CMakeFiles/projet_1.dir/grilleprogramme.c.obj CMakeFiles/projet_1.dir/bateau_programme.c.obj CMakeFiles/projet_1.dir/Jouer.c.obj CMakeFiles/projet_1.dir/deplacerprogramme.c.obj CMakeFiles/projet_1.dir/eclairerfonction.c.obj
+build untitled22.exe: C_EXECUTABLE_LINKER__untitled22_Debug CMakeFiles/untitled22.dir/main.c.obj CMakeFiles/untitled22.dir/menu.c.obj CMakeFiles/untitled22.dir/aide.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\projet_1.dir
+  OBJECT_DIR = CMakeFiles\untitled22.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = projet_1.exe
-  TARGET_IMPLIB = libprojet_1.dll.a
-  TARGET_PDB = projet_1.exe.dbg
+  TARGET_FILE = untitled22.exe
+  TARGET_IMPLIB = libuntitled22.dll.a
+  TARGET_PDB = untitled22.exe.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hucor\CLionProjects\projet+1\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\nahue\CLionProjects\untitled22\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -119,7 +101,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\hucor\CLionProjects\projet+1\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\hucor\CLionProjects\projet+1 -BC:\Users\hucor\CLionProjects\projet+1\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\nahue\CLionProjects\untitled22\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\nahue\CLionProjects\untitled22 -BC:\Users\nahue\CLionProjects\untitled22\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -129,7 +111,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build projet_1: phony projet_1.exe
+build untitled22: phony untitled22.exe
 
 # =============================================================================
 # Folder targets.
@@ -137,9 +119,9 @@ build projet_1: phony projet_1.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/hucor/CLionProjects/projet+1/cmake-build-debug
+# Folder: C:/Users/nahue/CLionProjects/untitled22/cmake-build-debug
 
-build all: phony projet_1.exe
+build all: phony untitled22.exe
 
 # =============================================================================
 # Built-in targets
