@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/hucor/CLionProjects/projet+1/cmake-build-debug"
+			"value" : "c:/Users/hucor/OneDrive/Documents/GitHub/BatailleNaval/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/hucor/CLionProjects/projet+1"
+			"value" : "C:/Users/hucor/OneDrive/Documents/GitHub/BatailleNaval"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1095,7 +1095,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/hucor/CLionProjects/projet+1/cmake-build-debug"
+			"value" : "C:/Users/hucor/OneDrive/Documents/GitHub/BatailleNaval/cmake-build-debug"
 		},
 		{
 			"name" : "projet_1_IS_TOP_LEVEL",
@@ -1119,7 +1119,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/hucor/CLionProjects/projet+1"
+			"value" : "C:/Users/hucor/OneDrive/Documents/GitHub/BatailleNaval"
 		}
 	],
 	"kind" : "cache",
