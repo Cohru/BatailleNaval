@@ -26,7 +26,7 @@ void aide(){
     printf("- Tirer: le joueur tire en choisissant les cordonnées, de 'a' a 'o' pour les lignes et de 0 a 15 pour les colonnes ");
     printf("(Si le tir tombe a l'eau, la lettre E apparait sur la grille 2)");
     printf("(Si le tir touche un navire adverse, la lettre de T apparait sur la grille 2");
-    printf
+    printf("-Eclairer: Vous disposez de 4 fusee. Le tire d'une de ces fusees devoile un carre de 4x4");
 
 
 
