@@ -25,13 +25,14 @@ void Partie(){
         affichegrille(joueur);
         //gotolicol
         affichegrille(affichage);
+
+
         printf("Appuyez sur une touche pour continuer.\n");
         ch = getch();
         printf ("Vous avez appuye sur la touche %c.\n", ch);
 
-        bateaualliee= true;
-        bateauennemi = true;
-    }while(!bateaualliee && !bateauennemi);
+
+    }while(!etatBateaux(bateau,n_bateau,bateaualliee) && !etatBateaux(bateau,n_bateau,bateauennemi));
     freeFlotte(n_bateau,bateau);
     freeFlotte(n_bateau,bateauad);
 }
@@ -40,7 +41,7 @@ bool etatBateaux(t_bateau *flotte, int n_bat,bool drapeau) {
     for (int j = 0; j < n_bat; j++) {
         for (int i = 0; i < flotte[j].size; i++) {
             if (flotte[j].cells_state[i] == false) {
-                drapeau = false;
+                drapeau = true;
                 return false;
             }
         }

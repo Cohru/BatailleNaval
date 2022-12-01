@@ -12,4 +12,6 @@
 #ifndef UPDATED_UPSTREAM_PARTIEHEADER_H
 #define UPDATED_UPSTREAM_PARTIEHEADER_H
 void Partie();
+
+bool etatBateaux(t_bateau *flotte, int n_bat,bool drapeau);
 #endif //UPDATED_UPSTREAM_PARTIEHEADER_H
