@@ -21,6 +21,7 @@ void Partie(){
 
     placementBateaux(n_bateau,bateau,joueur);
     placementBateaux(n_bateau,bateauad,adversaire);
+    int n_fusee=4;
     do{
         affichegrille(joueur);
         //gotolicol
@@ -32,7 +33,7 @@ void Partie(){
         if (ch == "t" ||ch== "T"){
             tirer(affichage,adversaire,bateauad,n_bateau);
         }
-        else if(ch== "e" || ch == "E"){
+        else if((ch== "e" || ch == "E")&& (n_fusee>0)){
             eclairer(adversaire);
         }
         else if (ch == "d" || ch =="D"){
@@ -43,7 +44,7 @@ void Partie(){
             //Sauvegarder
         }*/
         IAjoue(joueur,bateau,n_bateau);
-        
+
     }while(!etatBateaux(bateau,n_bateau,bateaualliee) && !etatBateaux(bateau,n_bateau,bateauennemi));
     freeFlotte(n_bateau,bateau);
     freeFlotte(n_bateau,bateauad);
