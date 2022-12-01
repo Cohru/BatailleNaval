@@ -85,6 +85,12 @@ build CMakeFiles/projet_1.dir/eclairerfonction.c.obj: C_COMPILER__projet_1_Debug
   OBJECT_DIR = CMakeFiles\projet_1.dir
   OBJECT_FILE_DIR = CMakeFiles\projet_1.dir
 
+build CMakeFiles/projet_1.dir/IAprogramme.c.obj: C_COMPILER__projet_1_Debug C$:/Users/hucor/OneDrive/Documents/GitHub/BatailleNaval/IAprogramme.c || cmake_object_order_depends_target_projet_1
+  DEP_FILE = CMakeFiles\projet_1.dir\IAprogramme.c.obj.d
+  FLAGS = -g -std=gnu2x
+  OBJECT_DIR = CMakeFiles\projet_1.dir
+  OBJECT_FILE_DIR = CMakeFiles\projet_1.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target projet_1
@@ -93,7 +99,7 @@ build CMakeFiles/projet_1.dir/eclairerfonction.c.obj: C_COMPILER__projet_1_Debug
 #############################################
 # Link the executable ======projet_1.exe
 
-build ======projet_1.exe: C_EXECUTABLE_LINKER__projet_1_Debug CMakeFiles/projet_1.dir/main.c.obj CMakeFiles/projet_1.dir/grilleprogramme.c.obj CMakeFiles/projet_1.dir/bateau_programme.c.obj CMakeFiles/projet_1.dir/Jouer.c.obj CMakeFiles/projet_1.dir/deplacerprogramme.c.obj CMakeFiles/projet_1.dir/eclairerfonction.c.obj
+build ======projet_1.exe: C_EXECUTABLE_LINKER__projet_1_Debug CMakeFiles/projet_1.dir/main.c.obj CMakeFiles/projet_1.dir/grilleprogramme.c.obj CMakeFiles/projet_1.dir/bateau_programme.c.obj CMakeFiles/projet_1.dir/Jouer.c.obj CMakeFiles/projet_1.dir/deplacerprogramme.c.obj CMakeFiles/projet_1.dir/eclairerfonction.c.obj CMakeFiles/projet_1.dir/IAprogramme.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\projet_1.dir
