@@ -36,16 +36,17 @@ void Partie(){
     freeFlotte(n_bateau,bateauad);
 }
 
-bool etatBateaux(t_bateau *flotte, int n_bat,bool drapeau){
-        for (int j=0;j<n_bat;j++) {
-            for (int i = 0; i < flotte[j].size; i++) {
-                if (flotte[j].cells_state[i] == false) {
-                    drapeau = true;
-                }
+bool etatBateaux(t_bateau *flotte, int n_bat,bool drapeau) {
+    for (int j = 0; j < n_bat; j++) {
+        for (int i = 0; i < flotte[j].size; i++) {
+            if (flotte[j].cells_state[i] == false) {
+                drapeau = false;
+                return false;
             }
         }
-        if (coule == false) {
-            printf("La partie est fini\n");
-
-
     }
+    if (drapeau == false) {
+        printf("La partie est fini\n");
+        return true;
+    }
+}
