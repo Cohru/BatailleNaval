@@ -29,9 +29,21 @@ void Partie(){
 
         printf("Appuyez sur une touche pour continuer.\n");
         ch = getch();
-        printf ("Vous avez appuye sur la touche %c.\n", ch);
-
-
+        if (ch == "t" ||ch== "T"){
+            tirer(affichage,adversaire,bateauad,n_bateau);
+        }
+        else if(ch== "e" || ch == "E"){
+            eclairer(adversaire);
+        }
+        else if (ch == "d" || ch =="D"){
+            Deplacer(joueur,bateau,n_bateau);
+        }
+        /*
+        else if (ch=="s"||ch=="S"){
+            //Sauvegarder
+        }*/
+        IAjoue(joueur,bateau,n_bateau);
+        
     }while(!etatBateaux(bateau,n_bateau,bateaualliee) && !etatBateaux(bateau,n_bateau,bateauennemi));
     freeFlotte(n_bateau,bateau);
     freeFlotte(n_bateau,bateauad);
