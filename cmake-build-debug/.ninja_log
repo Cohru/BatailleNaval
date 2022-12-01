@@ -1,5 +1,4 @@
 # ninja log v5
-<<<<<<< Updated upstream
 25	1414	6915189321988261	CMakeFiles/projet_1.dir/grilleprogramme.c.obj	704787745eab7127
 18	1138	6915206401938445	CMakeFiles/projet_1.dir/eclairerfonction.c.obj	3cec7cf23c10dbd9
 15	1527	6914373130826573	CMakeFiles/projet_1.dir/bateau_programme.c.obj	96c08a03034159e3
@@ -7,9 +6,12 @@
 1009	1167	6915206603769222	projet_1.exe	ce99e83121bb070f
 37	1557	6914373131131435	CMakeFiles/projet_1.dir/Jouer.c.obj	b9e834516146d76c
 29	1360	6914374733644846	CMakeFiles/projet_1.dir/deplacerprogramme.c.obj	ffbd54b526923951
-=======
-4	1171	6915188885961123	CMakeFiles/untitled22.dir/main.c.obj	623a1980d63ba327
-2	815	6915189003279509	CMakeFiles/untitled22.dir/menu.c.obj	8f3536a8a31ae3e8
-3	773	6915206295976207	CMakeFiles/untitled22.dir/aide.c.obj	2c46aa21ec5d975e
-773	881	6915206297009553	untitled22.exe	5708f77e47576418
->>>>>>> Stashed changes
+37	2150	6916014779365640	CMakeFiles/projet_1.dir/grilleprogramme.c.obj	2beae640f00d54dc
+76	2185	6916014779731827	CMakeFiles/projet_1.dir/Jouer.c.obj	c53a40e5e5d0ccd4
+5	2193	6916014779881860	CMakeFiles/projet_1.dir/main.c.obj	ba365b9c6ebacc36
+22	2197	6916014779982834	CMakeFiles/projet_1.dir/bateau_programme.c.obj	c70989f54314b085
+52	2255	6916014780648544	CMakeFiles/projet_1.dir/eclairerfonction.c.obj	e43150496f9255ce
+104	2295	6916014781039713	CMakeFiles/projet_1.dir/deplacerprogramme.c.obj	a6a4aaff042f83ae
+2295	2548	6916014783515927	======projet_1.exe	b8616d447023bbb3
+5	1338	6916015218339214	CMakeFiles/projet_1.dir/main.c.obj	ba365b9c6ebacc36
+1340	1545	6916015220353894	======projet_1.exe	b8616d447023bbb3

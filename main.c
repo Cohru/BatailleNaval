@@ -36,6 +36,6 @@ int main() {
     affichegrille(&joueur);
 
     freeFlotte(10, bateau);
-    //freeFlotte(10,bateauad);
+    freeFlotte(10,bateauad);
     return 0;
 }

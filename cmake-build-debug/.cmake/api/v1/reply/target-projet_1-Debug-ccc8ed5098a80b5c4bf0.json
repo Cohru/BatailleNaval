@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "projet_1.exe"
+			"path" : "======projet_1.exe"
 		},
 		{
-			"path" : "projet_1.pdb"
+			"path" : "======projet_1.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -85,7 +85,7 @@
 		"language" : "C"
 	},
 	"name" : "projet_1",
-	"nameOnDisk" : "projet_1.exe",
+	"nameOnDisk" : "======projet_1.exe",
 	"paths" : 
 	{
 		"build" : ".",

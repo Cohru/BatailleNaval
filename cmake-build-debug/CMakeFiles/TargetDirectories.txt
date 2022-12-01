@@ -1,7 +1,3 @@
-<<<<<<< Updated upstream
 C:/Users/hucor/OneDrive/Documents/GitHub/BatailleNaval/cmake-build-debug/CMakeFiles/projet_1.dir
-=======
-C:/Users/hucor/OneDrive/Documents/GitHub/BatailleNaval/cmake-build-debug/CMakeFiles/untitled22.dir
->>>>>>> Stashed changes
 C:/Users/hucor/OneDrive/Documents/GitHub/BatailleNaval/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/hucor/OneDrive/Documents/GitHub/BatailleNaval/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,6 +1,6 @@
 #include "Eclairerheader.h"
 
-void eclairer(char **adversaire){
+void eclairer(char adversaire[16][16]){
     t_coord cordo;
     printf("Saisir une case en x\n");
     scanf("%d",&cordo.y);
