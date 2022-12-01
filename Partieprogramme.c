@@ -21,10 +21,16 @@ void Partie(){
     placementBateaux(n_bateau,bateau,joueur);
     placementBateaux(n_bateau,bateauad,adversaire);
     do{
+        affichegrille(joueur);
+        //gotolicol
+        affichegrille(affichage);
         printf("Appuyez sur une touche pour continuer.\n");
         ch = getch();
-        printf ("Vous avez appuyé sur la touche %c.\n", ch);
+        printf ("Vous avez appuye sur la touche %c.\n", ch);
 
-    }while(bateaualliee||bateauennemi);
-
+        bateaualliee= true;
+        bateauennemi = true;
+    }while(!bateaualliee || !bateauennemi);
+    freeFlotte(n_bateau,bateau);
+    freeFlotte(n_bateau,bateauad);
 }

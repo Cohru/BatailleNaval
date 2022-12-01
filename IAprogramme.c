@@ -8,5 +8,4 @@ void IAjoue ( char joueur[16][16], t_bateau *flotte, int n_bateau){
         printf("un bateau a ete toucher\n");
         trouverBateau(flotte,pos,n_bateau);
     }
-
 }

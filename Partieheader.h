@@ -11,5 +11,5 @@
 #define n_bateau  n_porteavion+n_croisseur+n_destroyer+n_sousmarin
 #ifndef UPDATED_UPSTREAM_PARTIEHEADER_H
 #define UPDATED_UPSTREAM_PARTIEHEADER_H
-
+void Partie();
 #endif //UPDATED_UPSTREAM_PARTIEHEADER_H
