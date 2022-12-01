@@ -49,6 +49,7 @@ cmake_ninja_workdir = C$:/Users/hucor/OneDrive/Documents/GitHub/BatailleNaval/cm
 
 build cmake_object_order_depends_target_projet_1: phony || CMakeFiles/projet_1.dir
 
+<<<<<<< Updated upstream
 build CMakeFiles/projet_1.dir/main.c.obj: C_COMPILER__projet_1_Debug C$:/Users/hucor/OneDrive/Documents/GitHub/BatailleNaval/main.c || cmake_object_order_depends_target_projet_1
   DEP_FILE = CMakeFiles\projet_1.dir\main.c.obj.d
   FLAGS = -g -std=gnu2x
@@ -96,6 +97,31 @@ build CMakeFiles/projet_1.dir/eclairerfonction.c.obj: C_COMPILER__projet_1_Debug
   OBJECT_FILE_DIR = CMakeFiles\projet_1.dir
   TARGET_COMPILE_PDB = CMakeFiles\projet_1.dir\
   TARGET_PDB = projet_1.pdb
+=======
+build CMakeFiles/untitled22.dir/main.c.obj: C_COMPILER__untitled22_Debug C$:/Users/hucor/OneDrive/Documents/GitHub/BatailleNaval/main.c || cmake_object_order_depends_target_untitled22
+  DEP_FILE = CMakeFiles\untitled22.dir\main.c.obj.d
+  FLAGS = -g -std=gnu2x
+  OBJECT_DIR = CMakeFiles\untitled22.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled22.dir
+  TARGET_COMPILE_PDB = CMakeFiles\untitled22.dir\
+  TARGET_PDB = untitled22.pdb
+
+build CMakeFiles/untitled22.dir/menu.c.obj: C_COMPILER__untitled22_Debug C$:/Users/hucor/OneDrive/Documents/GitHub/BatailleNaval/menu.c || cmake_object_order_depends_target_untitled22
+  DEP_FILE = CMakeFiles\untitled22.dir\menu.c.obj.d
+  FLAGS = -g -std=gnu2x
+  OBJECT_DIR = CMakeFiles\untitled22.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled22.dir
+  TARGET_COMPILE_PDB = CMakeFiles\untitled22.dir\
+  TARGET_PDB = untitled22.pdb
+
+build CMakeFiles/untitled22.dir/aide.c.obj: C_COMPILER__untitled22_Debug C$:/Users/hucor/OneDrive/Documents/GitHub/BatailleNaval/aide.c || cmake_object_order_depends_target_untitled22
+  DEP_FILE = CMakeFiles\untitled22.dir\aide.c.obj.d
+  FLAGS = -g -std=gnu2x
+  OBJECT_DIR = CMakeFiles\untitled22.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled22.dir
+  TARGET_COMPILE_PDB = CMakeFiles\untitled22.dir\
+  TARGET_PDB = untitled22.pdb
+>>>>>>> Stashed changes
 
 
 # =============================================================================
@@ -111,10 +137,17 @@ build projet_1.exe: C_EXECUTABLE_LINKER__projet_1_Debug CMakeFiles/projet_1.dir/
   OBJECT_DIR = CMakeFiles\projet_1.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+<<<<<<< Updated upstream
   TARGET_COMPILE_PDB = CMakeFiles\projet_1.dir\
   TARGET_FILE = projet_1.exe
   TARGET_IMPLIB = libprojet_1.dll.a
   TARGET_PDB = projet_1.pdb
+=======
+  TARGET_COMPILE_PDB = CMakeFiles\untitled22.dir\
+  TARGET_FILE = untitled22.exe
+  TARGET_IMPLIB = libuntitled22.dll.a
+  TARGET_PDB = untitled22.pdb
+>>>>>>> Stashed changes
 
 
 #############################################

@@ -205,13 +205,21 @@ CMAKE_STRIP:FILEPATH=C:/Program Files/JetBrains/CLion 2022.2.3/bin/mingw/bin/str
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
+<<<<<<< Updated upstream
 projet_1_BINARY_DIR:STATIC=C:/Users/hucor/OneDrive/Documents/GitHub/BatailleNaval/cmake-build-debug
+=======
+untitled22_BINARY_DIR:STATIC=C:/Users/hucor/OneDrive/Documents/GitHub/BatailleNaval/cmake-build-debug
+>>>>>>> Stashed changes
 
 //Value Computed by CMake
 projet_1_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
+<<<<<<< Updated upstream
 projet_1_SOURCE_DIR:STATIC=C:/Users/hucor/OneDrive/Documents/GitHub/BatailleNaval
+=======
+untitled22_SOURCE_DIR:STATIC=C:/Users/hucor/OneDrive/Documents/GitHub/BatailleNaval
+>>>>>>> Stashed changes
 
 
 ########################
