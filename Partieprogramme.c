@@ -23,11 +23,17 @@ void Partie(){
     placementBateaux(n_bateau,bateauad,adversaire);
     int n_fusee=4;
     do{
+        printf("GRILLE JOUEUR\n");
         affichegrille(joueur);
         //gotolicol
+        printf("GRILLE AFFICHAGE\n");
         affichegrille(affichage);
 
         printf("Appuyez sur une touche pour continuer.\n");
+        printf("t pour tirer\n");
+        printf("d pour deplacer\n");
+        printf("e pour eclaire\n");
+        printf("s pour sauvegarder\n");
         ch = getch();
         fflush(stdin);
         if (ch == 't' ||ch== 'T'){
@@ -44,6 +50,8 @@ void Partie(){
         else if (ch=="s"||ch=="S"){
             //Sauvegarder
         }*/
+        printf("\n");
+        printf("TOUR DE L'IA\n");
         IAjoue(joueur,bateau,n_bateau);
 
     }while(!etatBateaux(bateau,n_bateau,bateaualliee) && !etatBateaux(bateau,n_bateau,bateauennemi));
