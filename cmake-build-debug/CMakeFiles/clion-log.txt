@@ -2,3 +2,4 @@
 -- Configuring done
 -- Generating done
 -- Build files have been written to: C:/Users/hucor/OneDrive/Documents/GitHub/BatailleNaval/cmake-build-debug
+CMake File API: C:\Users\hucor\OneDrive\Documents\GitHub\BatailleNaval\cmake-build-debug: failed to load from 'C:\Users\hucor\OneDrive\Documents\GitHub\BatailleNaval\cmake-build-debug\.cmake\api\v1\reply\cache-v2-e186a8d65b298ab70aff.json'

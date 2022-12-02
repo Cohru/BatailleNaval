@@ -1,7 +1,7 @@
 #include "Sauvegardeheader.h"
 
 void Ecriredatasave(t_save *partie){
-    char n_partie[]={"save/save.dat"};
+    char n_partie[]={"save.dat"};
     t_save partie_data;
     partie_data= *partie;
     FILE * fp=fopen(n_partie,"wb");
@@ -12,10 +12,10 @@ void Ecriredatasave(t_save *partie){
     fclose(fp);
 }
 
-t_save Liredatasave(char *n_partie){
+t_save Liredatasave(){
     t_save partie_data;
     FILE * fp;
-    fp= fopen(n_partie,"rb");
+    fp= fopen("save/save.dat","rb");
     if(!fp){
         printf("erreur d'ouverture du fichier\n");
     }
@@ -26,4 +26,31 @@ t_save Liredatasave(char *n_partie){
         }
     }
     return partie_data;
+}
+
+t_save remplissagestructure(char affichage[16][16],t_bateau *bateau,t_bateau *bateauad,int n_fusee, int n_bat){
+    t_save savegarde_data;
+    for (int i =0;i<16;i++){
+        for (int j = 0;j<16;j++){
+            savegarde_data.affichage[i][j]=affichage[i][j];
+        }
+    }
+    savegarde_data.bateau= malloc(sizeof(t_bateau)*n_bat);
+    savegarde_data.bateauad= malloc(sizeof(t_bateau)*n_bat);
+    for (int k=0;k<n_bat;k++){
+        savegarde_data.bateau[k]=bateau[k];
+    }
+    for (int m=0;m<n_bat;m++){
+        savegarde_data.bateauad[m]=bateauad[m];
+    }
+    savegarde_data.n_fusee=n_fusee;
+
+    return savegarde_data;
+}
+
+void sauvegarde(char affichage[16][16],t_bateau *bateau,t_bateau *bateauad,int n_fusee, int n_bat){
+    t_save data;
+    data = remplissagestructure(affichage,bateau,bateauad,n_fusee,n_bat);
+    Ecriredatasave(&data);
+    printf("test que la fonction tourne\n");
 }

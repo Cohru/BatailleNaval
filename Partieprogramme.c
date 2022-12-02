@@ -65,10 +65,11 @@ void Partie(){
         else if (ch == 'd' || ch =='D'){
             Deplacer(joueur,bateau,n_bateau);
         }
-        /*
-        else if (ch=="s"||ch=="S"){
-            //Sauvegarder
-        }*/
+
+        else if (ch=='s' || ch=='S'){
+
+            sauvegarde(affichage,bateau,bateauad,n_fusee,n_bateau);
+        }
         printf("\n");
         printf("TOUR DE L'IA\n");
         IAjoue(joueur,bateau,n_bateau);

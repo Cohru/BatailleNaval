@@ -1132,6 +1132,7 @@
 			],
 			"type" : "STATIC",
 			"value" : "C:/Users/hucor/OneDrive/Documents/GitHub/BatailleNaval"
+<<<<<<< Updated upstream:cmake-build-debug/.cmake/api/v1/reply/cache-v2-e186a8d65b298ab70aff.json
 		},
 		{
 			"name" : "untitled22_BINARY_DIR",
@@ -1156,6 +1157,8 @@
 			],
 			"type" : "STATIC",
 			"value" : "C:/Users/hucor/OneDrive/Documents/GitHub/BatailleNaval"
+=======
+>>>>>>> Stashed changes:cmake-build-debug/.cmake/api/v1/reply/cache-v2-4193cb4635156a62b62c.json
 		}
 	],
 	"kind" : "cache",
