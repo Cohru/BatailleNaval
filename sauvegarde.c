@@ -15,7 +15,7 @@ void Ecriredatasave(t_save *partie){
 t_save Liredatasave(){
     t_save partie_data;
     FILE * fp;
-    fp= fopen("save/save.dat","rb");
+    fp= fopen("save.dat","rb");
     if(!fp){
         printf("erreur d'ouverture du fichier\n");
     }

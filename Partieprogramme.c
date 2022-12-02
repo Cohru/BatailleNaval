@@ -95,3 +95,11 @@ bool etatBateaux(t_bateau *flotte, int n_bat,bool drapeau) {
         return true;
     }
 }
+
+void ChargerPartie(){
+    t_save recupdata;
+    recupdata= Liredatasave();
+    char joueur[16][16];
+    creergrille(joueur);
+
+}
