@@ -27,16 +27,17 @@ void Partie(){
         //gotolicol
         affichegrille(affichage);
 
-
         printf("Appuyez sur une touche pour continuer.\n");
         ch = getch();
-        if (ch == "t" ||ch== "T"){
+        fflush(stdin);
+        if (ch == 't' ||ch== 'T'){
             tirer(affichage,adversaire,bateauad,n_bateau);
         }
-        else if((ch== "e" || ch == "E")&& (n_fusee>0)){
-            eclairer(adversaire);
+        else if((ch== 'e' || ch == 'E')&& (n_fusee>0)){
+            n_fusee--;
+            //eclairer(adversaire);
         }
-        else if (ch == "d" || ch =="D"){
+        else if (ch == 'd' || ch =='D'){
             Deplacer(joueur,bateau,n_bateau);
         }
         /*
