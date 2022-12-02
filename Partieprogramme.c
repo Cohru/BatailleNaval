@@ -1,5 +1,22 @@
 #include "Partieheader.h"
 
+void clear() {
+    COORD topLeft  = { 0, 0 };
+    HANDLE console = GetStdHandle(STD_OUTPUT_HANDLE);
+    CONSOLE_SCREEN_BUFFER_INFO screen;
+    DWORD written;
+
+    GetConsoleScreenBufferInfo(console, &screen);
+    FillConsoleOutputCharacterA(
+            console, ' ', screen.dwSize.X * screen.dwSize.Y, topLeft, &written
+    );
+    FillConsoleOutputAttribute(
+            console, FOREGROUND_GREEN | FOREGROUND_RED | FOREGROUND_BLUE,
+            screen.dwSize.X * screen.dwSize.Y, topLeft, &written
+    );
+    SetConsoleCursorPosition(console, topLeft);
+}
+
 void Partie(){
     char ch;
 
@@ -56,6 +73,7 @@ void Partie(){
         printf("TOUR DE L'IA\n");
         IAjoue(joueur,bateau,n_bateau);
         bateaualliee = etatBateaux(bateau,n_bateau,bateaualliee);
+        clear();
     }while(!bateaualliee && !bateauennemi);
     freeFlotte(n_bateau,bateau);
     freeFlotte(n_bateau,bateauad);
