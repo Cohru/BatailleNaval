@@ -2,8 +2,7 @@
 
 void Partie(){
     char ch;
-    bool bateaualliee = false;
-    bool bateauennemi = false;
+
     //initialisation de la partie
     char joueur[16][16];
     char affichage[16][16];
@@ -21,6 +20,8 @@ void Partie(){
 
     placementBateaux(n_bateau,bateau,joueur);
     placementBateaux(n_bateau,bateauad,adversaire);
+    bool bateaualliee = etatBateaux(bateau,n_bateau,bateaualliee);
+    bool bateauennemi = etatBateaux(bateau,n_bateau,bateauennemi);
     int n_fusee=4;
     do{
         printf("GRILLE JOUEUR\n");
@@ -38,10 +39,11 @@ void Partie(){
         fflush(stdin);
         if (ch == 't' ||ch== 'T'){
             tirer(affichage,adversaire,bateauad,n_bateau);
+            bateauennemi = etatBateaux(bateau,n_bateau,bateauennemi);
         }
         else if((ch== 'e' || ch == 'E')&& (n_fusee>0)){
             n_fusee--;
-            //eclairer(adversaire);
+            eclairer(adversaire);
         }
         else if (ch == 'd' || ch =='D'){
             Deplacer(joueur,bateau,n_bateau);
@@ -53,8 +55,8 @@ void Partie(){
         printf("\n");
         printf("TOUR DE L'IA\n");
         IAjoue(joueur,bateau,n_bateau);
-
-    }while(!etatBateaux(bateau,n_bateau,bateaualliee) && !etatBateaux(bateau,n_bateau,bateauennemi));
+        bateaualliee = etatBateaux(bateau,n_bateau,bateaualliee);
+    }while(!bateaualliee && !bateauennemi);
     freeFlotte(n_bateau,bateau);
     freeFlotte(n_bateau,bateauad);
 }
