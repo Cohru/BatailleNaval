@@ -10,6 +10,7 @@ void tirer (char affichage[16][16], char adversaire[16][16], t_bateau *flotte, i
     if (adversaire[pos.x][pos.y]!=NULL){
         affichage[pos.x][pos.y]=0x54;
         trouverBateau(flotte,pos,n_bateau);
+        printf("Un bateau a ete touche\n");
     }
     else{
         affichage[pos.x][pos.y]=0x45;

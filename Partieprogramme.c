@@ -73,6 +73,7 @@ void Partie(){
         printf("TOUR DE L'IA\n");
         IAjoue(joueur,bateau,n_bateau);
         bateaualliee = etatBateaux(bateau,n_bateau,bateaualliee);
+        Sleep(2000);
         clear();
     }while(!bateaualliee && !bateauennemi);
     freeFlotte(n_bateau,bateau);
