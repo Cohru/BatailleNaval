@@ -28,11 +28,21 @@ t_save Liredatasave(){
     return partie_data;
 }
 
-t_save remplissagestructure(char affichage[16][16],t_bateau *bateau,t_bateau *bateauad,int n_fusee, int n_bat){
+t_save remplissagestructure(char joueur[16][16],char affichage[16][16],char adversaire[16][16],t_bateau *bateau,t_bateau *bateauad,int n_fusee, int n_bat){
     t_save savegarde_data;
     for (int i =0;i<16;i++){
         for (int j = 0;j<16;j++){
             savegarde_data.affichage[i][j]=affichage[i][j];
+        }
+    }
+    for (int i =0;i<16;i++){
+        for (int j = 0;j<16;j++){
+            savegarde_data.joueur[i][j]=joueur[i][j];
+        }
+    }
+    for (int i =0;i<16;i++){
+        for (int j = 0;j<16;j++){
+            savegarde_data.adversaire[i][j]=adversaire[i][j];
         }
     }
     savegarde_data.bateau= malloc(sizeof(t_bateau)*n_bat);
@@ -48,9 +58,9 @@ t_save remplissagestructure(char affichage[16][16],t_bateau *bateau,t_bateau *ba
     return savegarde_data;
 }
 
-void sauvegarde(char affichage[16][16],t_bateau *bateau,t_bateau *bateauad,int n_fusee, int n_bat){
+void sauvegarde(char joueur[16][16],char affichage[16][16],char adversaire[16][16],t_bateau *bateau,t_bateau *bateauad,int n_fusee, int n_bat){
     t_save data;
-    data = remplissagestructure(affichage,bateau,bateauad,n_fusee,n_bat);
+    data = remplissagestructure(joueur,affichage,adversaire,bateau,bateauad,n_fusee,n_bat);
     Ecriredatasave(&data);
     printf("test que la fonction tourne\n");
 }

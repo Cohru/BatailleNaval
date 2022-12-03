@@ -6,7 +6,6 @@
 #include "Partieheader.h"
 int main() {
     srand(time(NULL));
-    Partie();
-
+    //Partie();
     return 0;
 }
