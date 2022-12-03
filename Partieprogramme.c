@@ -54,6 +54,14 @@ void Partie(){
         printf("s pour sauvegarder\n");
         ch = getch();
         fflush(stdin);
+        if (ch == 'v' ||ch== 'V'){
+            printf("\n");
+            printf("GRILLE ADVERSAIRE\n");
+            affichegrille(adversaire);
+            printf("Rejouer\n");
+            ch= getch();
+            fflush(stdin);
+        }
         if (ch == 't' ||ch== 'T'){
             tirer(affichage,adversaire,bateauad,n_bateau);
             bateauennemi = etatBateaux(bateau,n_bateau,bateauennemi);
@@ -139,6 +147,15 @@ void ChargerPartie(){
         printf("s pour sauvegarder\n");
         ch = getch();
         fflush(stdin);
+
+        if (ch == 'v' ||ch== 'V'){
+            printf("\n");
+            printf("GRILLE ADVERSAIRE\n");
+            affichegrille(adversaire);
+            printf("Rejouer\n");
+            ch= getch();
+            fflush(stdin);
+        }
         if (ch == 't' ||ch== 'T'){
             tirer(affichage,adversaire,bateauad,n_bateau);
             bateauennemi = etatBateaux(bateau,n_bateau,bateauennemi);
