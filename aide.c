@@ -3,10 +3,10 @@
 
 //
 #include"menu.h"
-void aide(){
+void aide() {
     char ch;
-    gotoligcol(0,45);
-    Color(15,0);
+    gotoligcol(0, 45);
+    Color(15, 0);
     printf("CARACTERISTIQUE DU JEU:\n");
     printf("\n");
 
@@ -20,7 +20,7 @@ void aide(){
     printf("- 3 destroyers (lettre D) et possedant une taille de 3 cases\n");
     printf("- 4 sous-marins (lettre S) et possedant une taille de 1 case\n");
     printf("Ces navires sont places aleatoirement en debut de partie\n");
-    gotoligcol(12,45);
+    gotoligcol(12, 45);
     printf("REGLES DU JEU:\n");
     printf("\n");
     printf("Chaque joueur joue a chaque tour de role, en choisissant a chaque tour une des trois actions:\n");
@@ -33,15 +33,24 @@ void aide(){
     printf("\n");
     printf("Le premier a couler tous les bateaux ennemis gagne !\n");
 
-    gotoligcol(30,90);
-    Color(1,0);
+    gotoligcol(30, 90);
+    Color(1, 0);
     printf("[M] MENU\n");
     ch = getch();
-    if (ch=='M'){
+    if (ch == 'M') {
         clear();
         Menu();
     }
-    else
+    else{
+        clear();
+        gotoligcol(31, 90);
+        Color(12, 0);
         printf("Mauvaise touche");
+        aide();
+
+    }
+
+
 
 }
+

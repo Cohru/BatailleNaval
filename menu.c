@@ -73,14 +73,13 @@ int Menu()
 
     if (ChoixMode == 1)
     {
-
-        printf("Lancement de la partie \n");
+        //clear();
+        //Partie();
 
     }
     else if (ChoixMode == 2)
     {
-
-        printf("Vous reprenez votre derniere partie\n");
+        //clear();
     }
     else if (ChoixMode == 3)
     {
