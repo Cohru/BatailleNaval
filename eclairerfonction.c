@@ -20,5 +20,4 @@ void eclairer(char adversaire[16][16]){
     printf("Une fusee a ete utilise\n");
     affichegrille(flash);
     Sleep(5000);
-
 }
