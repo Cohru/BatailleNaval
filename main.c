@@ -2,8 +2,9 @@
 #include "menu.h"
 int main() {
     int choix;
-    choix= Menu();
+    //choix= Menu();
     int ChoixMode = 1;
     Menu();
+
     return 0;
 }
