@@ -1,7 +1,6 @@
 # ninja log v5
-4	1171	6915188885961123	CMakeFiles/untitled22.dir/main.c.obj	623a1980d63ba327
-2	815	6915189003279509	CMakeFiles/untitled22.dir/menu.c.obj	8f3536a8a31ae3e8
-3	773	6915206295976207	CMakeFiles/untitled22.dir/aide.c.obj	2c46aa21ec5d975e
-773	881	6915206297009553	untitled22.exe	5708f77e47576418
-2	933	6917233282083176	CMakeFiles/untitled22.dir/main.c.obj	d0e36d42de34edc1
-13	950	6917233282274393	CMakeFiles/untitled22.dir/menu.c.obj	9abb9889ca2ca657
+5	1461	6917214451787819	CMakeFiles/untitled22.dir/menu.c.obj	a674f392bd67ef7e
+4	1200	6917217783114892	CMakeFiles/untitled22.dir/aide.c.obj	80c7bb08eb939d42
+1	228	6917806029838442	build.ninja	ef1bcca13377c20a
+4	1466	6917203397107982	CMakeFiles/untitled22.dir/main.c.obj	3d7311ecd0492144
+1202	1447	6917217785492494	untitled22.exe	5708f77e47576418

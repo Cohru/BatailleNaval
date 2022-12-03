@@ -12,5 +12,6 @@ void gotoligcol( int lig, int col );
 void Color(int couleurDuTexte,int couleurDeFond);
 int Menu();
 void aide();
+void clear();
 
 #endif //UNTITLED22_MENU_H
