@@ -41,22 +41,22 @@ int Menu()
 {
     int ChoixMode =0;
     Color(1, 0);
-    gotoligcol(1,35);
+    gotoligcol(0,35);
     printf("-------------------BATAILLE NAVALE---------------------\n");
 
 
     do
     {
         Color(1, 0);
-        gotoligcol(5,40);
+        gotoligcol(2,40);
         printf("1. Jouer une partie en local\n");
-        gotoligcol(7,40);
+        gotoligcol(4,40);
         printf("2. Charger une partie\n");//choix du mode de jeu
-        gotoligcol(9,40);
+        gotoligcol(6,40);
         printf("3. Aide \n");
-        gotoligcol(11,40);
+        gotoligcol(8,40);
         printf("4. Quitter \n");
-        gotoligcol(13,40);
+        gotoligcol(10,40);
         Color(12, 0);
         printf("Appuyer sur le numero correspondant !\n");
 
@@ -73,13 +73,13 @@ int Menu()
 
     if (ChoixMode == 1)
     {
+        //clear();
+        //Partie();
 
-        printf("Lancement de la partie \n");
     }
     else if (ChoixMode == 2)
     {
-
-        printf("Vous reprenez votre derniere partie\n");
+        //clear();
     }
     else if (ChoixMode == 3)
     {
