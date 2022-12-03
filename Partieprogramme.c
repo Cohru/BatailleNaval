@@ -1,5 +1,5 @@
 #include "Partieheader.h"
-
+#include "menu.h"
 void clear() {
     COORD topLeft  = { 0, 0 };
     HANDLE console = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -43,15 +43,20 @@ void Partie(){
     do{
         printf("GRILLE JOUEUR\n");
         affichegrille(joueur);
-        //gotolicol
+
         printf("GRILLE AFFICHAGE\n");
         affichegrille(affichage);
-
+        gotoligcol(30,60);
         printf("Appuyez sur une touche pour continuer.\n");
+        gotoligcol(31,60);
         printf("t pour tirer\n");
+        gotoligcol(32,60);
         printf("d pour deplacer\n");
+        gotoligcol(33,60);
         printf("e pour eclaire\n");
+        gotoligcol(34,60);
         printf("s pour sauvegarder\n");
+        gotoligcol(36,0);
         ch = getch();
         fflush(stdin);
         if (ch == 'v' ||ch== 'V'){
