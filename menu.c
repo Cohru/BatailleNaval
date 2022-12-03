@@ -75,6 +75,7 @@ int Menu()
     {
 
         printf("Lancement de la partie \n");
+
     }
     else if (ChoixMode == 2)
     {
