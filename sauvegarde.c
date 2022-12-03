@@ -62,5 +62,5 @@ void sauvegarde(char joueur[16][16],char affichage[16][16],char adversaire[16][1
     t_save data;
     data = remplissagestructure(joueur,affichage,adversaire,bateau,bateauad,n_fusee,n_bat);
     Ecriredatasave(&data);
-    printf("test que la fonction tourne\n");
+    printf("La partie est sauvegarder\n");
 }
