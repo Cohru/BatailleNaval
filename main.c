@@ -4,8 +4,15 @@
 #include "Fdeplacerheader.h"
 #include "Eclairerheader.h"
 #include "Partieheader.h"
+
+#include "menu.h"
 int main() {
     srand(time(NULL));
-    //Partie();
+    int choix;
+    //choix= Menu();
+    int ChoixMode = 1;
+    Menu();
+
     return 0;
 }
+
