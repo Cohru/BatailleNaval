@@ -57,6 +57,8 @@ void Partie(){
         printf("[S] pour sauvegarder\n");
         gotoligcol(35,60);
         printf("[M] MENU\n");
+        gotoligcol(36,60);
+        printf("Nombre de fusee restant %d\n",n_fusee);
         gotoligcol(36,0);
         do {
             ch = getch();
@@ -152,6 +154,7 @@ void ChargerPartie(){
         affichegrille(joueur);
         printf("GRILLE AFFICHAGE\n");
         affichegrille(affichage);
+
         gotoligcol(30,60);
         printf("Appuyez sur une touche pour continuer.\n");
         gotoligcol(31,60);
@@ -164,6 +167,8 @@ void ChargerPartie(){
         printf("[S] pour sauvegarder\n");
         gotoligcol(35,60);
         printf("[M] MENU\n");
+        gotoligcol(36,60);
+        printf("Nombre de fusse restant %d\n",n_fusee);
         gotoligcol(36,0);
         do {
             ch = getch();
