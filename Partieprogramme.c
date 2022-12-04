@@ -43,22 +43,26 @@ void Partie(){
     do{
         printf("GRILLE JOUEUR\n");
         affichegrille(joueur);
-
         printf("GRILLE AFFICHAGE\n");
         affichegrille(affichage);
         gotoligcol(30,60);
         printf("Appuyez sur une touche pour continuer.\n");
         gotoligcol(31,60);
-        printf("t pour tirer\n");
+        printf("[T] pour tirer\n");
         gotoligcol(32,60);
-        printf("d pour deplacer\n");
+        printf("[D] pour deplacer\n");
         gotoligcol(33,60);
-        printf("e pour eclaire\n");
+        printf("[E] pour eclaire\n");
         gotoligcol(34,60);
-        printf("s pour sauvegarder\n");
+        printf("[S] pour sauvegarder\n");
+        gotoligcol(35,60);
+        printf("[M] MENU\n");
         gotoligcol(36,0);
-        ch = getch();
-        fflush(stdin);
+        do {
+            ch = getch();
+            fflush(stdin);
+        }while(ch != 't' && ch!= 'T' && ch!= 'e' && ch != 'E' && ch != 'd' && ch !='D'&& ch != 's' && ch!='S'&& ch != 'm' && ch!='M'&& ch == 'v' && ch== 'V');
+
         if (ch == 'v' ||ch== 'V'){
             printf("\n");
             printf("GRILLE ADVERSAIRE\n");
@@ -83,6 +87,10 @@ void Partie(){
 
             sauvegarde(joueur,affichage,adversaire,bateau,bateauad,n_fusee,n_bateau);
         }
+        else if(ch=='m' || ch=='M'){
+            clear();
+            break;
+        }
         printf("\n");
         printf("TOUR DE L'IA\n");
         IAjoue(joueur,bateau,n_bateau);
@@ -92,6 +100,7 @@ void Partie(){
     }while(!bateaualliee && !bateauennemi);
     freeFlotte(n_bateau,bateau);
     freeFlotte(n_bateau,bateauad);
+    Menu();
 }
 
 bool etatBateaux(t_bateau *flotte, int n_bat,bool drapeau) {
@@ -141,17 +150,25 @@ void ChargerPartie(){
     do{
         printf("GRILLE JOUEUR\n");
         affichegrille(joueur);
-        //gotolicol
         printf("GRILLE AFFICHAGE\n");
         affichegrille(affichage);
-
+        gotoligcol(30,60);
         printf("Appuyez sur une touche pour continuer.\n");
-        printf("t pour tirer\n");
-        printf("d pour deplacer\n");
-        printf("e pour eclaire\n");
-        printf("s pour sauvegarder\n");
-        ch = getch();
-        fflush(stdin);
+        gotoligcol(31,60);
+        printf("[T] pour tirer\n");
+        gotoligcol(32,60);
+        printf("[D] pour deplacer\n");
+        gotoligcol(33,60);
+        printf("[E] pour eclaire\n");
+        gotoligcol(34,60);
+        printf("[S] pour sauvegarder\n");
+        gotoligcol(35,60);
+        printf("[M] MENU\n");
+        gotoligcol(36,0);
+        do {
+            ch = getch();
+            fflush(stdin);
+        }while(ch != 't' && ch!= 'T' && ch!= 'e' && ch != 'E' && ch != 'd' && ch !='D'&& ch != 's' && ch!='S'&& ch != 'm' && ch!='M'&& ch == 'v' && ch== 'V');
 
         if (ch == 'v' ||ch== 'V'){
             printf("\n");
@@ -177,6 +194,10 @@ void ChargerPartie(){
 
             sauvegarde(joueur,affichage,adversaire,bateau,bateauad,n_fusee,n_bateau);
         }
+        else if(ch=='m' || ch=='M'){
+            clear();
+            break;
+        }
         printf("\n");
         printf("TOUR DE L'IA\n");
         IAjoue(joueur,bateau,n_bateau);
@@ -186,5 +207,5 @@ void ChargerPartie(){
     }while(!bateaualliee && !bateauennemi);
     freeFlotte(n_bateau,bateau);
     freeFlotte(n_bateau,bateauad);
-
+    Menu();
 }
