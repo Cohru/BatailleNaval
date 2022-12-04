@@ -1,4 +1,4 @@
-#include "grilleheader.h"
+ #include "grilleheader.h"
 #include "bateauheader.h"
 t_bateau newBateau( e_aligne alignement, e_type type,t_coord posi,size_t size, char lettre) {
     t_bateau new_bateau;

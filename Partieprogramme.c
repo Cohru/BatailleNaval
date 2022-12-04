@@ -43,7 +43,7 @@ void Partie(){
     do{
         printf("GRILLE JOUEUR\n");
         affichegrille(joueur);
-        printf("\n"); 
+        printf("\n");
         printf("GRILLE AFFICHAGE\n");
         affichegrille(affichage);
         gotoligcol(30,60);
