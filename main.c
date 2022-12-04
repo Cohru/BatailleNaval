@@ -8,10 +8,8 @@
 #include "menu.h"
 int main() {
     srand(time(NULL));
-    int choix;
-    //choix= Menu();
-    int ChoixMode = 1;
-    Menu();
+
+    Menu();//appel menu
 
     return 0;
 }

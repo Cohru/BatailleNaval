@@ -20,9 +20,9 @@ void affichegrille(char grille[16][16]){
     HANDLE H=GetStdHandle(STD_OUTPUT_HANDLE);
     for (int j=0;j<16;j++){
         if (j>9){
-            printf("%i",grille[0][j]);
+            printf("%i",grille[0][j]);// affiche la valeur de la grille dans la case
             if (j!=15) {
-                printf("%c", 0xB3);
+                printf("%c", 0xB3);// affiche un trait
             }
         }else if (j!=0){
             printf(" %i",grille[0][j]);//affiche les nombres des coordonnées
@@ -37,14 +37,14 @@ void affichegrille(char grille[16][16]){
     for (int i=1;i<16;i++){
         for(int j=0;j<16;j++){
             if (j>0){
-                SetConsoleTextAttribute(H,9*16+0);
+                SetConsoleTextAttribute(H,9*16+0);// couleur
             }
             printf(" %c",grille[i][j]);//affiche la valeur de la case
             if (j!=16) {
                 printf("%c", 0xB3);//trace la barre vertical pour separer les cases
             }
         }
-        SetConsoleTextAttribute(H,0*16+15);
+        SetConsoleTextAttribute(H,0*16+15);// couleur
         printf("\n");
     }
 }

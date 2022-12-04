@@ -32,13 +32,13 @@ typedef struct  {
     unsigned int y;
 }t_coord;
 
-typedef struct  {
-    t_coord pos;
-    e_aligne alignement;
-    e_type type;
-    size_t size;
-    char lettre;
-    bool *cells_state;
+typedef struct  {// toutes les informations qu'un bateau a besoin
+    t_coord pos;// des coordonnées
+    e_aligne alignement;// sa direction
+    e_type type;//sont type
+    size_t size;// sa taille
+    char lettre;// la lette qu'elle represente
+    bool *cells_state;// l'etat dans le quel il est
 }t_bateau;
 
 void freeBateau(t_bateau *bat);

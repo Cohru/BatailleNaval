@@ -6,7 +6,7 @@
 #include "Eclairerheader.h"
 #include "Partieheader.h"
 
-void gotoligcol( int lig, int col )
+void gotoligcol( int lig, int col )// fonction qui positionne le texte pcq + beau
 {
 // ressources
     COORD mycoord;
@@ -23,7 +23,7 @@ void Color(int couleurDuTexte,int couleurDeFond) // fonction d'affichage de coul
     SetConsoleTextAttribute(H,couleurDeFond*16+couleurDuTexte);
 }
 
-int Menu()
+int Menu()// la fonction menu
 {
     int ChoixMode =0;
     Color(1, 0);

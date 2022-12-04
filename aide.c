@@ -33,18 +33,11 @@ void aide() {
     Color(1, 0);
     printf("[M] MENU\n");
     ch = getch();
-    if (ch == 'M') {
+    if (ch == 'M') {//retourne au menu
         clear();
         Menu();
     }
-    else{
-        clear();
-        gotoligcol(31, 90);
-        Color(12, 0);
-        printf("Mauvaise touche");
-        aide();
 
-    }
 
 
 

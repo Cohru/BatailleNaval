@@ -1,6 +1,6 @@
 #include "grilleheader.h"
 #include "bateauheader.h"
-typedef struct{
+typedef struct{// creation d'une structure que l'on va sauvegarder en binaire
     char joueur[16][16];
     char affichage[16][16];
     char adversaire[16][16];
