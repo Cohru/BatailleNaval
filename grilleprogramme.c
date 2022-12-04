@@ -17,6 +17,7 @@ void creergrille(char grille[16][16]){
     grille[0][0]=NULL;
 }
 void affichegrille(char grille[16][16]){
+    HANDLE H=GetStdHandle(STD_OUTPUT_HANDLE);
     for (int j=0;j<16;j++){
         if (j>9){
             printf("%i",grille[0][j]);
@@ -36,12 +37,14 @@ void affichegrille(char grille[16][16]){
     for (int i=1;i<16;i++){
         for(int j=0;j<16;j++){
             if (j>0){
+                SetConsoleTextAttribute(H,9*16+0);
             }
             printf(" %c",grille[i][j]);//affiche la valeur de la case
             if (j!=16) {
                 printf("%c", 0xB3);//trace la barre vertical pour separer les cases
             }
         }
+        SetConsoleTextAttribute(H,0*16+15);
         printf("\n");
     }
 }
