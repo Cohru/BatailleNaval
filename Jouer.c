@@ -3,6 +3,7 @@
 #include "grilleheader.h"
 void tirer (char affichage[16][16], char adversaire[16][16], t_bateau *flotte, int n_bateau){
     t_coord pos;//demande au joueur ou tirer
+    printf("\n");
     printf("Sasir une coordonnee en x\n");
     scanf("%d",&pos.y);
     printf("Sasir une coordonnee en y\n");

@@ -27,7 +27,7 @@ int Menu()// la fonction menu
 {
     int ChoixMode =0;
     Color(1, 0);
-    gotoligcol(0,35);
+    gotoligcol(0,50);
     printf("-------------------BATAILLE NAVALE---------------------\n");
 
 
